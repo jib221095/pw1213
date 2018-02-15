@@ -1,0 +1,40 @@
+
+<html>
+<head>
+	<title>Formularios</title>
+</head>
+<body>
+
+	Formulario Contenedor que sirve para encapsular 
+	m&eacute;todos de entrada de datos del usuario. <br>
+	en el formulario se puede: <br>
+
+	<ol>
+		<li>Capturar datos</li>
+		<li>Validar lo que se ingresa </li>
+		<li>Enviar a proceso</li>
+		<li>Reiniciar la captura</li>
+	</ol>
+	<!-- el get si se ven los datos en la URL  -->
+	<!-- el post no se ven los datos en la URl -->
+   <form action="procesa.html" method="post">
+   	     <input name="txtNumeroControl" type="text" placeholder="N&uacute;mero de control ">
+   	     <input name="txtClave" type="password" placeholder="clave de acceso" required="" autofocus="">
+   	     <!-- autofocus es para que se ponga automatico en el cuadro para llenar datos -->
+   	     <!-- required es un campo que no se puede dejar en blanco  -->
+   	     <input name="txtPromedio" type="number" placeholder="promedio">
+   	     <input name="txtFecha" type="date" >
+   	     <input name="txtColor" type="color">
+   	     <input name="txtColor" type="email">
+   	     <input name="txtBuscar" type="search">
+   	     <!-- dispara la accion del form -->
+   	     <input type="submit" value="Enviar">
+   	     <!-- reset reinicia los input -->
+   	     <input type="reset" value="Borrar">
+   	     <!-- simple boton -->
+   	     <input type="button" value="Enviar">
+   	
+   </form>
+
+</body>
+</html>
